@@ -26,6 +26,14 @@ public class App {
         s = StringUtils.center("foo", 10); // you can use StringUtils to do .left() or .right() aligned text as well
         System.out.println("|" + s + "|");
 
+        // left-aligned, with dashes - used to fill the extra space
+        s = StringUtils.leftPad("foo", 10, "-");
+        System.out.println("|" + s + "|");
+
+        // right-aligned, with dashes - used to fill the extra space
+        s = StringUtils.rightPad("foo", 10, "-");
+        System.out.println("|" + s + "|");
+
         // mixed alignments
         System.out.println("\nTable-like alignment:");
         System.out.println(String.format("| %-20s | %20s | %20s |", "left-aligned", StringUtils.center("center-aligned", 20), "right-aligned"));
