@@ -152,4 +152,5 @@ replay_pid*
 
 # Do include dependency jar files #
 !lib/*.jar
+!lib/**/*.jar
 
